@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-*{
 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.main{
+
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,78 +14,76 @@
     font-weight: 600;
     font-family: 'Plus Jakarta Sans', sans-serif;
     width: 100%;
-    height: auto;
+    height: fit-content;
     position: relative;
-    
 }
-.dashboard{
+
+.dashboard {
     width: 20%;
     height: 100vh;
-    background: white;
+    background: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
-.row{
+
+.row {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
 
-@media (width < 800px){
-    .dashboard{
+@media (width < 800px) {
+    .dashboard {
         display: none;
     }
 }
 
-.side{
-
+.side {
     display: flex;
     justify-content: flex-start;
-    flex-direction:column;
-    flex: 100%;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
     background: white;
-    padding: 2rem 2rem;
     gap: 2rem;
 }
-.hello{
+
+.hello {
     width: 100%;
     height: 10%;
     background: white;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
-.middle{
+
+.middle {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     gap: 2rem;
     align-items: center;
     padding-top: 1rem;
     width: 100%;
-    height: 60%;
     background: white;
     border-radius: 8px;
 }
 
-.pic{
+.pic {
     padding-top: 2rem;
     width: 60%;
-    height: 90%;
+    height: 20rem;
     background: gray;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-.time{
+.time {
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 90%;
+    height: fit-content;
     gap: 2rem;
     background: transparent;
-    
 }
-.time .place{
+
+.time .place {
     width: 100%;
     height: 70%;
     background: white;
@@ -95,68 +94,71 @@
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
+    padding: 2rem 0rem;
 }
-.time .connect{
+
+.time .connect {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    height: 20%;
+    padding: 1rem;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
-@media (max-width:800px){
-    .pic{
-      flex: 100%;
-      max-width: 600px;
+
+@media (max-width:800px) {
+    .pic {
+        flex: 100%;
+        max-width: 600px;
     }
-  
-    .time{
-      flex: 100%;
-      max-width: 600px;
-      height: 25vh;
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 2rem;
+
+    .time {
+        flex: 100%;
+        flex-direction: row;
+        gap: 2rem;
     }
-    .place{
+
+    .place {
         flex: 100%;
         max-width: 70%;
     }
-    .connect{
+
+    .connect {
         flex: 100%;
         max-width: 20%;
         flex-wrap: wrap;
         overflow: hidden;
-
     }
-    
-    
 }
-.time .connect section{
+
+.time .connect section {
     width: 2rem;
     height: 2rem;
     border-radius: 25px;
     background: #E6ECFF;
 
 }
-.time .place .date{
+
+.time .place .date {
     width: 80%;
     height: 30%;
     background: white;
     border-left: 2px solid #456FF6;
 }
-.time .place .application{
+
+.time .place .application {
     margin-top: 1rem;
     width: 80%;
     height: 20%;
     background: #F0F4FF;
     border-radius: 10px;
 }
-.time .place .applynow{
+
+.time .place .applynow {
     width: 80%;
     height: 20%;
     background: #456FF6;
@@ -165,27 +167,111 @@
     justify-content: center;
     align-items: center;
 }
-.time .place .applynow p{
+
+.time .place .applynow p {
     color: white;
     margin-left: 0rem;
 }
-.time .place .date .p1{
+
+.time .place .date .p1 {
     color: #B7BEC2;
     font-size: 13px
 }
-.time .place .date .p2{
+
+.time .place .date .p2 {
     font-size: 14px;
 }
-p{
+
+p {
     margin-left: 1rem;
 }
-.time .place .application .p3{
+
+.time .place .application .p3 {
     color: #5C67C8;
-   font-size: 10px;
-   margin-top: .5rem;
+    font-size: 10px;
+    margin-top: .5rem;
 }
-.time .place .application .p4{
+
+.time .place .application .p4 {
     color: #00005C;
     font-size: 11px;
 }
 
+
+
+
+
+.main {
+    display: flex;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+
+.desc {
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hackprofile {
+    display: block;
+    border-radius: 100%;
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    background-color: #000;
+}
+
+.love {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: block;
+    background-color: pink;
+}
+
+@media (width<800px) {
+    .side{
+        flex-direction: column;
+    }
+
+    .desc {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+    .description{
+        gap: .5rem;
+    }
+
+    .description div h1 {
+        font-size: 1.5rem;
+    }
+
+    .description div div span {
+        font-size: .7rem;
+    }
+
+    .hackprofile {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .love {
+        width: 2rem;
+        height: 2rem;
+    }
+}
